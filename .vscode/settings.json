@@ -1,0 +1,28 @@
+{
+    "python.defaultInterpreterPath": "/home/flawlesse/.pyenv/versions/pyenv_routes4life/bin/python",
+    "python.sortImports.path": "/home/flawlesse/.pyenv/versions/pyenv_routes4life/bin/isort",
+    "editor.formatOnSave": true,
+    "python.formatting.provider": "black",
+    "python.formatting.blackArgs": [],
+    "python.linting.enabled": true,
+    "python.sortImports.args": [
+        "--profile=black"
+    ],
+    "[python]": {
+        "files.insertFinalNewline": true,
+        "editor.codeActionsOnSave": {
+            "source.organizeImports": true,
+        }
+    },
+    "python.linting.flake8Enabled": true,
+    "python.linting.flake8Args": ["--max-line-length=100", "--exclude=test_*.py, conftest.py, factories.py"],
+    "python.linting.pylintEnabled": true,
+    "python.linting.pylintArgs": ["--disable=C0114", "--disable=C0115", "--disable=C0116", "--disable=W0237", "--exclude=test_*.py"],
+    "python.languageServer": "Jedi",
+    "python.testing.pytestArgs": [
+        "-c",
+        "config/pytest.ini"
+    ],
+    "python.testing.unittestEnabled": false,
+    "python.testing.pytestEnabled": true,
+}
